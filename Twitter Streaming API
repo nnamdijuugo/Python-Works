@@ -1,0 +1,105 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled1.ipynb",
+      "version": "0.3.2",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/nnamdijuugo/Python-Works/blob/master/Twitter%20Streaming%20API\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "rTVb_DoWJuTu",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "import tweepy as tw  #import the tweepy library as 'tw'\n",
+        "import tkinter as tk #import tkinter yay\n",
+        "\n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "aT0y5vw5WAZ2",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "import json #import package to analyze json"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "E6PodMSUc5m6",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "#twitter user credentials:\n",
+        "ACCESS_TOKEN = '115598495-srISyD12BQMofy0Nv8uLRy2fUXvbtPf9rtOtpeXM '\n",
+        "ACCESS_SECRET = '6Px60JmDBQ7KseraRDPjR4tlr6QQYzeDtPiaaq242CuDh'\n",
+        "CONSUMER_KEY = '0J8MtmB76mCv2bK48aWgL4feq'\n",
+        "CONSUMER_SECRET = 'mpDcbeMdCEvmfGvXWwUh7hcqmEMYDoTJkiu219I68HK7CIp8Mb' \n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "wxofueujXCt6",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "# Setup tweepy to authenticate with Twitter credentials:\n",
+        "auth = tw.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)\n",
+        "auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)\n",
+        "\n",
+        "api=tw.API(auth, wait_on_rate_limit=True, \n",
+        "          wait_on_rate_limit_notify=True, \n",
+        "          compression=True)\n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "ZvX3qJKuZBbZ",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        ""
+      ],
+      "execution_count": 0,
+      "outputs": []
+    }
+  ]
+}
